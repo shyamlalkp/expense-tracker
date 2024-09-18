@@ -10,7 +10,7 @@ export const TransactionList = () => {
       <h3>History</h3>
       <ul className="list">
         {transactions.map((data) => (
-          <TransactionComponent data={data} />
+          <TransactionComponent key={data.id} data={data} />
 
           // <Transaction transaction={transaction} />
         ))}
