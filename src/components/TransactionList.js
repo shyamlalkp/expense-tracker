@@ -11,13 +11,7 @@ export const TransactionList = () => {
       <ul className="list">
         {transactions.map((data) => (
           <TransactionComponent key={data.id} data={data} />
-
-          // <Transaction transaction={transaction} />
         ))}
-        {/* <li className="minus">
-          Cash <span>-$400</span>
-          <button className="delete-btn">x</button>
-        </li> */}
       </ul>
     </>
   );
