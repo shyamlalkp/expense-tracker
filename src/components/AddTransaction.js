@@ -7,15 +7,15 @@ export const AddTransaction = () => {
 
   const { addTransaction } = useContext(GlobalContext);
 
-  const onSubmit = (e) => {
+  const onSubmit = (e) => {                        //prevent default form submission 
     e.preventDefault();
 
     const newTransaction = {
-      id: Math.floor(Math.random() * 100000000),
-      text,
-      amount: +amount,
+      id: Math.floor(Math.random() * 100000000),   //unique id
+      text,                                        //transaction description
+      amount: +amount,                             //converts string to number
     };
-    addTransaction(newTransaction);
+    addTransaction(newTransaction);                // Add transaction to global state
   };
   return (
     <>
