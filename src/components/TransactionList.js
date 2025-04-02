@@ -4,7 +4,6 @@ import { TransactionComponent } from "./TransactionComponent";
 
 export const TransactionList = () => {
   const { transactions } = useContext(GlobalContext);
-  // console.log(transactions);
   return (
     <>
       <h3>History</h3>
