@@ -8,7 +8,7 @@ export const IncomeExpenses = () => {
   const income = amounts
     .filter((item) => item > 0)
     .reduce((acc, item) => (acc += item), 0)
-    .toFixed(2);                              //upto to decimal places
+    .toFixed(2);                              //upto two decimal places
   const expense = (
     amounts.filter((item) => item < 0).reduce((acc, item) => (acc += item), 0) *
     -1
